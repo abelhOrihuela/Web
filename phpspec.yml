@@ -1,0 +1,5 @@
+suites:
+    main:
+        namespace: Wtc
+        psr4_prefix: Wtc
+        src_path: app
