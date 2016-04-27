@@ -8,6 +8,8 @@
     <section class="menu__dashboard">
       <li><a href="{{ route('blog_new_path') }}">Nuevo articulo</a></li>
       <li><a href="{{ route('vacantes_new_path') }}">Nueva vacante</a></li>
+      <li><a href="{{ route('item_index_path') }}">Nuevo item</a></li>
+
     </section>
   </section>
 </div>

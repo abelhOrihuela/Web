@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Auth;
 use Wtc\Http\Requests;
 use Wtc\Http\Controllers\Controller;
 use Wtc\User;
+use Wtc\Curriculum;
 
 class AuthController extends Controller
 {
@@ -41,9 +42,19 @@ class AuthController extends Controller
         $user->email=$request->email;
         $user->password=bcrypt($request->password);
         $user->remember_token= str_random(10);
-        $user->save();
 
 
+        if($user->save()){
+          auth()->attempt($request->only(['email', 'password']));
+
+          $curriculum= new Curriculum();
+          $curriculum->user_id=$user->id;
+          $curriculum->save();
+
+          return redirect()->route('home_index_path');
+        }else{
+          return redirect()->route('auth_inde_path');
+        }
     }
 
     /**

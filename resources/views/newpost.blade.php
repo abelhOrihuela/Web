@@ -13,48 +13,48 @@
         <p>
           Titulo
         </p>
-          <input type="text" name="title" placeholder="Titulo" class="field__input">
+          <input type="text" name="title" placeholder="Titulo" class="field__input" required>
         </div>
 
         <div class="form__title-input">
         <p>
           Rama/Concepto
         </p>
-          <input type="text" name="branch" placeholder="Titulo" class="field__input">
+          <input type="text" name="branch" placeholder="Rama / Concepto" class="field__input">
         </div>
 
         <div class="form__title-input">
         <p>
           Descripcion 140 Caracteres.
         </p>
-          <input type="text" name="description" placeholder="Titulo" class="field__input">
+          <input type="text" name="description" placeholder="Descripcion para vista previa" class="field__input">
         </div>
 
         <div class="form__img-input">
         <p>
           Imagen
         </p>
-          <input type="file" name="img"  class="field__input">
+          <input type="file" name="img"  class="field__input" required>
         </div>
         <div class="form__text-input">
           <p>
             Introduccion
           </p>
-          <textarea name="intro_post" class="intro__post" placeholder="Contenido" class="field__input"></textarea>
+          <textarea name="intro_post" class="intro__post" placeholder="Introduccion" class="field__input" required></textarea>
         </div>
 
         <div class="form__text-input">
           <p>
             Desarrollo
           </p>
-          <textarea name="body_post" class="body__post" placeholder="Contenido" class="field__input"></textarea>
+          <textarea name="body_post" class="body__post" placeholder="Desarrollo" class="field__input"></textarea>
         </div>
 
         <div class="form__text-input">
           <p>
             Conclusion
           </p>
-          <textarea name="conclusion_post"  placeholder="Contenido" class="field__input"></textarea>
+          <textarea name="conclusion_post"  placeholder="Conclusion" class="field__input"></textarea>
         </div>
 
         <div class="form__text-input">

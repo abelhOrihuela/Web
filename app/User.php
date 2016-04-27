@@ -41,4 +41,9 @@ class User extends Model implements AuthenticatableContract,
     {
         return $this->hasMany(Post::class, 'author_id');
     }
+
+    public function curriculum()
+   {
+       return $this->hasOne(Curriculum::class);
+   }
 }

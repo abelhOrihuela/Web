@@ -1,9 +1,10 @@
 @extends('layouts.default')
 @section('content-wrapper')
+<div class="contain__def center">
+  <h1 class="title__pages font-blue center relaway">Coaching</h1>
+<section class="contain__information center">
 
-<div class="content-wrapper2">
-  <section class="info__profile">
-    <article class="username__profile">
+
     <h2>{{ $user->name }}</h2>
       <label for="">Email :<span>{{ $user->email}}</span></label>
     </article>

@@ -11,6 +11,9 @@ body{
 /*******************************************************************************/
 .font-blue{color: #062960;}
 .font-gray{color: #424242;}
+.font-red{
+  color: #616161;
+  }
 
 /*******************************************************************************/
 
@@ -22,6 +25,11 @@ body{
 .margin{
   margin-left: 1em;
   margin-right: 1em;
+}
+/***************************************************************/
+
+.letter__item{
+  color: #2196F3;
 }
 
 /*******************************************************************************/
@@ -38,7 +46,7 @@ body{
  /*******************************************************************************/
 
  .contain__def{
-   margin-top: 8em;
+   margin-top: 5.8em;
    padding: 0;
    background-color: white;
    padding-top: .5em;
@@ -66,9 +74,13 @@ body{
 #footer{
   background-color: #37474F;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;;
   flex-wrap: wrap;
   padding: 1em;
+}
+.socios .item__socios span a{
+  color: white;
+  font-size: 15px;
 }
 #footer  ul{
   height: 50%;
@@ -582,3 +594,50 @@ body{
 }
 
 /***************************************************/
+.section__cv{
+  width: 90%;
+  border: 1px solid gray;
+  border-radius: 4px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.section__cv h2{
+  border-bottom: 1px solid gray;
+  width: 90%;
+}
+.section__cv h3{
+  width: 90%;
+}
+
+.form__cv{
+
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  margin: .5em;
+  color: black;
+}
+.field_cv{
+  margin: .3em;
+}
+
+.field_cv input, textarea, select{
+  border-radius: 3px;
+  border: 1px solid gray;
+}
+.profile{
+  width: 90%;
+}
+.profile img{
+  width: 15vh;
+  background-color: gray;
+  color: black;
+  border-radius: 5px;
+}
+.profile img, h1{
+  display: flex;
+  justify-content: flex-start;
+}

@@ -16,17 +16,26 @@
       <p class="font-gray relaway center">
 
           {{ $post->intro_post }}
-          <br>
-          <br>
-            {{ $post->body_post }}
-      </p>
+
     </article>
-    <div class="contain__information">
-      <p class="font-gray just__text">
+    <div class="contain__information center margin">
+      <p class="font-gray relaway just__text">
+        {{ $post->body_post }}
+      </p>
+    </div>
+    <div>
+      @foreach( $post->items as $item )
+        <p class="font-gray relaway just__text {{ $item->type__item }}">
+          {{ $item->description }}
+        </p>
+      @endforeach
+    </div>
+    <div class="">
+      <p class="font-gray just__text ">
         {{ $post->conclusion_post }}
       </p>
-      <p class="font-gray just__text">
-          Fuente: {{ $post->source }}
+      <p class="font-red just__text">
+          Fuente(s): {{ $post->source }}
       </p>
     </div>
 

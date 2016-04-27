@@ -1,0 +1,114 @@
+header{
+  width: 100%;
+}
+header nav{
+  width: 100%;
+  padding-left: auto;
+  padding-right: auto;
+}
+.menu{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.menu ul li{
+  list-style: none;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.menu ul li a{
+    font-family: 'Oswald', sans-serif;
+    font-weight:lighter;
+    font-size: 20px;
+    padding: .3em;
+}
+
+.menu__bar{
+  display: none;
+}
+header nav ul{
+  overflow: hidden;
+  list-style: none;
+
+}
+
+@-webkit-keyframes background {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes background {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+header nav ul li{
+  float: left;
+}
+header nav ul li{
+
+  display: inline-block;
+  padding: 20px;
+  text-decoration: none;
+}
+header nav ul li a:hover{
+  background-color: #B2DFDB;
+  color: blue;
+  border-radius: 0px 6px;
+}
+@media screen and (max-width: 800px ) {
+  header nav{
+    width: 90%;
+    height: 100%;
+    margin: 0;
+    position: fixed;
+    left: -100%;
+    background: -webkit-linear-gradient(45deg, #2196F3 0%, #010c14 100%);
+    background: linear-gradient(45deg, #2196F3 0%, #010c14 100%);
+    background-size: 200% 200%;
+    -webkit-animation: background 6s ease infinite;
+    animation: background 6s ease infinite;
+  }
+  header nav .menu ul li{
+    display: block;
+    float: none;
+    border-bottom: 1px solid #64B5F6;
+    text-align: left;
+
+  }
+  .menu__bar{
+    display: block;
+    padding-left: 4vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    width: 100%;
+    background: #0D47A1;
+  }
+
+  .menu ul li a{
+      font-family: 'Oswald', sans-serif;
+      font-weight:lighter;
+      font-size: 15px;
+      padding: .1em;
+  }
+
+  header nav ul li{
+
+    display: inline-block;
+    padding: 5px;
+    text-decoration: none;
+  }
+}

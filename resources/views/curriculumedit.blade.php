@@ -4,7 +4,7 @@
 
   <div class="profile center">
     <img src="img/member.png" alt="Agrega una foto" />
-    <h1 class="title__pages font-blue center relaway">Mi perfil: {{ $user->name }}</h1>
+    <h1 class="title__pages font-blue center relaway">{{ $user->name }}</h1>
 
   </div>
 
@@ -18,9 +18,13 @@
     <section class="form__cv">
       <div class="field_cv">
         <label for="status-marital">Estado Civil</label>
-          <div class="">
-            {{ $user->curriculum->status_marital }}
-          </div>
+        <select class="" name="status_marital" value=" {{ $user->curriculum->id }}">
+          <option value="casado(a)">Casado(a)</option>
+          <option value="soltero(a)">Soltero(a)</option>
+          <option value="divorciado(a)">Divorciado(a)</option>
+          <option value="union_libre">Union libre</option>
+          <option value="viudo(a)">Viudo(a)</option>
+        </select>
       </div>
 
       <div class="field_cv">

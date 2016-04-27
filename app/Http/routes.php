@@ -1,26 +1,28 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Application Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register all of the routes for an application.
-| It's a breeze. Simply tell Laravel the URIs it should respond to
-| and give it the controller to call when that URI is requested.
-|
-*/
+/* RUTAS CON AUTENTICACION USER */
 
 Route::group( ['middleware' => 'auth'], function(){
+
     Route::get('Perfil', [
         'uses' => 'CurriculumController@index',
         'as'   => 'curriculum_index_path'
     ]);
 
+    Route::post('Perfil',[
+      'uses' => 'CurriculumController@edit',
+      'as'  => 'curriculum_edit_path'
+    ]);
+
+    Route::post('Perfil',[
+      'uses' => 'CurriculumController@edit',
+      'as'  => 'curriculum_edit_path'
+    ]);
+
 
 });
 
-
+/*  RUTAS ACCESO SOLO PARA ADMINISTRADORES */
 Route::group( ['middleware' => 'authtype'], function(){
 
   Route::get('Dashboard', [
@@ -43,9 +45,24 @@ Route::group( ['middleware' => 'authtype'], function(){
     'as'   => 'vacantes_create_path'
   ]);
 
+  Route::get('Item', [
+    'uses' => 'ItemsController@index',
+    'as'   => 'item_index_path'
+  ]);
+
+  Route::post('Item', [
+    'uses' => 'ItemsController@create',
+    'as'   => 'item_create_path'
+  ]);
+
+  Route::post('Blog/create', [
+    'uses' => 'PostsController@create',
+    'as'   => 'blog_create_path'
+  ]);
+
 });
 
-
+/*RUTAS USUARIOS MORTALES */
 Route::get('/',[
     'uses'  => 'HomeController@index',
     'as'    => 'home_index_path'
@@ -93,10 +110,6 @@ Route::get('DesarrolloOrganizacional', [
   'as'   => 'desarrollo_index_path'
 ]);
 
-
-
-
-
 Route::get('Blog', [
   'uses' => 'PostsController@index',
   'as'   => 'blog_index_path'
@@ -105,13 +118,6 @@ Route::get('Blog', [
 Route::get('Blog/{id}', [
   'uses' => 'PostsController@show',
   'as'   => 'blog_show_path'
-]);
-
-
-
-Route::post('Blog/create', [
-  'uses' => 'PostsController@create',
-  'as'   => 'blog_create_path'
 ]);
 
 Route::get('Contacto', [
@@ -138,7 +144,6 @@ Route::get('auth/logout', [
     'uses' => 'AuthController@destroy',
     'as'   => 'auth_destroy_path'
 ]);
-
 
 Route::post('auth/create', [
     'uses' => 'AuthController@create',

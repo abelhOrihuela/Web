@@ -76,7 +76,7 @@
         </p>
       </section>
     </article>
-
+    <br>
   </section>
+  </div>
 @stop
-</div>

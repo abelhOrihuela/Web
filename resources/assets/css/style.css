@@ -1,0 +1,180 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*
+ * -- BASE STYLES --
+ * Most of these are inherited from Base, but I want to change a few.
+ */
+body {
+    line-height: 1.7em;
+    color: #7f8c8d;
+    font-size: 13px;
+    background-color: #EEEEEE;
+}
+.pure-img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+.pure-menu.pure-menu-fixed {
+    border-bottom: none;
+    z-index: 4;
+    background: -webkit-linear-gradient(45deg, #2196F3 0%, #010c14 100%);
+    background: linear-gradient(45deg, #2196F3 0%, #010c14 100%);
+    background-size: 200% 200%;
+    -webkit-animation: background 6s ease infinite;
+    animation: background 6s ease infinite;
+}
+
+
+
+
+@-webkit-keyframes background {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes background {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.home-menu .pure-menu-heading {
+    color: white;
+    font-weight: 400;
+    font-size: 120%;
+}
+
+.home-menu .pure-menu-selected a {
+    color: white;
+}
+
+.home-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+/*
+ * -- SPLASH STYLES --
+ * This is the blue top section that appears on the page.
+ */
+
+.splash-container {
+    background-color: white;
+    z-index: 1;
+    overflow: hidden;
+    /* The following styles are required for the "scroll-over" effect */
+    width: 100%;
+    height: 80%;
+    top: 0;
+    left: 0;
+    position: fixed !important;
+}
+
+.splash {
+    /* absolute center .splash within .splash-container */
+    width: 80%;
+    height: 50%;
+    margin: auto;
+    position: absolute;
+    top: 80px; left: 0; bottom: 0; right: 0;
+    text-align: center;
+    text-transform: uppercase;
+    background-image: url("esc.jpg");
+    background-size: cover;
+    box-shadow: 6px  5px 4px #01579b;
+    padding-left: 4px;
+    padding-right: 4px;
+
+}
+
+.splash__1 {
+    /* absolute center .splash within .splash-container */
+    width: 80%;
+    height: 50%;
+    margin: auto;
+    position: absolute;
+    top: 80px; left: 0; bottom: 0; right: 0;
+    background-size: cover;
+    padding-left: 4px;
+    padding-right: 4px;
+
+}
+
+
+.splash__second {
+    /* absolute center .splash within .splash-container */
+    width: 60%;
+    height: 50%;
+    margin: auto;
+    position: absolute;
+    top: 100px; left: 0; bottom: 0; right: 0;
+    text-align: center;
+    text-transform: uppercase;
+    background-size: cover;
+}
+
+
+
+.splash-container-second {
+    background: white;
+    z-index: 1;
+    overflow: hidden;
+    /* The following styles are required for the "scroll-over" effect */
+    width: 100%;
+    height: 88%;
+    top: 0;
+    left: 0;
+    position: fixed !important;
+}
+
+.splash-subhead {
+    color: white;
+    letter-spacing: 0.05em;
+    opacity: 0.8;
+}
+
+
+.content-wrapper2 {
+    position: absolute;
+    top: 10vh;
+    width: 100%;
+    min-height: 12%;
+    z-index: 2;
+}
+
+.content-head {
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin: 2em 0 1em;
+}
+
+.content-head-ribbon {
+    color: white;
+}
+.btn-primary{
+  background-color: blue;
+  color: white;
+  border-radius: 4px;
+  font-size: 15px;
+  text-decoration: none;
+}

@@ -6,37 +6,30 @@ use Illuminate\Http\Request;
 use Wtc\Http\Requests;
 use Wtc\Http\Controllers\Controller;
 
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Contracts\Auth\Guard;
+use Wtc\Post;
+use Wtc\Item;
 
-class CurriculumController extends Controller
+class ItemsController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
-          $user=Auth::user();
-          return view('curriculum',['user' => $user] );
-    }
+     public function index(){
+       $posts= Post::orderBy('id', 'DESC')->get();
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create(Request $request)
-    {
+       return view('itemnew', ['posts' => $posts]);
+     }
 
+     public function create(Request $request){
 
-        $curriculum= new Curriculum();
-        $item->post_id=(int)$request->post_id;
-        $item->type__item=$request->type__item;
-        $item->description=$request->description;
-        $item->save();
-    }
+       $item= new Item();
+       $item->post_id=(int)$request->post_id;
+       $item->type__item=$request->type__item;
+       $item->description=$request->description;
+       $item->save();
+     }
 
     /**
      * Store a newly created resource in storage.
@@ -66,11 +59,9 @@ class CurriculumController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Request $request)
+    public function edit($id)
     {
-      $user=Auth::user();
-      $user->update(['status-marital' => $request->status_marital ]);
-      $user->save();
+        //
     }
 
     /**
@@ -82,7 +73,7 @@ class CurriculumController extends Controller
      */
     public function update(Request $request, $id)
     {
-
+        //
     }
 
     /**
