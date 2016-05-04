@@ -18,7 +18,7 @@
     Considerando que las empresas familiares hoy en día son el motor de miles de economías a nivel mundial WORLD TALENT CONSULTING ha logrado PROFESIONALIZAR E INSTITUCIONALIZAR sus procesos y su Cultura Organizacional, mediante diversas palancas de Desarrollo como son la Planeación Estratégica, Planes de Negocios, Desarrollo Organizacional, Manejo del Cambio, entre otras herramientas fundamentales para el crecimiento de los negocios.
 
   </p>
-  
+
   <h2 class="font-blue relaway margin">Planes de Carrera y Planes de Suceción</h2>
   <p class="font-gray  relaway center margin">
     Conscientes de la importancia del desarrollo de las PERSONAS como FACTOR CLAVE para el logro de Objetivos, hemos implementado Programas Integrales en el Desarrollo del Talento y el Alineamiento de las Estructuras Organizacionales, implementando Programas y Planes de CAPTACIÓN, RETENCIÓN y DESARROLLO del Potencial Humano.
@@ -27,5 +27,5 @@
     Hemos podido confirmar que INVERTIR en el TALENTO genera VALOR a cualquier negocio, por este motivo hemos logrado implementar Planes de sucesión a corto, mediano y largo plazo que han permitido impulsar, eficientar los procesos de la organización.
   </p>
   </section>
+  </div>
 @stop
-</div>

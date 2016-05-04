@@ -25,5 +25,5 @@
 
   </p>
   </section>
+  </div>
 @stop
-</div>
