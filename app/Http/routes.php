@@ -130,22 +130,26 @@ Route::post('Contacto', [
   'as'   => 'contacto_store_path'
 ]);
 
-Route::get('auth/login', [
+Route::get('Auth/login', [
   'uses' => 'AuthController@index',
   'as'   => 'auth_show_path'
 ]);
 
-Route::post('auth/login', [
+Route::post('Auth/login', [
     'uses' => 'AuthController@store',
     'as'   => 'auth_store_path'
 ]);
 
-Route::get('auth/logout', [
+Route::get('Auth/logout', [
     'uses' => 'AuthController@destroy',
     'as'   => 'auth_destroy_path'
 ]);
 
-Route::post('auth/create', [
+Route::post('Auth/create', [
     'uses' => 'AuthController@create',
     'as'   => 'auth_create_path'
 ]);
+
+Route::get('Thanks', function () {
+    return view('thanks');
+});
