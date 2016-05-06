@@ -641,3 +641,6 @@ body{
   display: flex;
   justify-content: flex-start;
 }
+.center-thanks{
+  text-align: center;
+}
