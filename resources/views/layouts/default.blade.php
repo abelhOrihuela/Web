@@ -78,6 +78,8 @@
     <ul>
       <li><a href="{{ route('politicas_index_path') }}" target="_blank">Politicas</a></li>
       <li><a href="{{ route('terminos_index_path') }}" target="_blank" >Terminos</a></li>
+      <li><!--- inicio codigo www.gratisparaweb.com ---><div align="center">
+        <a href="http://contadores.gratisparaweb.com" target="_blank"><img src="http://contadores.gratisparaweb.com/imagen.php?contador=82&id2=581988" alt="Contadores" border="0"></a><br><br><img src="" alt="Visitas" width="" height="" border="" usemap="#Map" /><map name="Map"><area shape="rect" coords="48,1,90,22" href="http://www.cursosparati.com" target="_blank" alt="Cursos"><area shape="rect" coords="0,0,47,15" href="http://contadores.gratisparaweb.com" target="_blank" alt=""></map></a></div><!--- fin codigo www.gratisparaweb.com ---></li>
     </ul>
     <div class="socios">
       <h3>Socios</h3>
