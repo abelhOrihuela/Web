@@ -11,7 +11,7 @@
 
 
   <p class="font-gray relaway margin">
-    Estas sucrito a nuestro boletin semanal,
+    Estas suscrito a nuestro boletin semanal,
     recibiras informacion actual de tu interes.
   </p>
 
@@ -19,7 +19,7 @@
     <img src="img/check.png" alt="" class="center-thanks"/>
 </section>
 <p class="font-gray  relaway center margin">
-  World Talent Consulting: nace como una empresa dedicada a ofrecer soluciones especializadas en Consultoría, Headhunting, Coaching y Outplacement. Hoy en día se he convertido en una empresa de consultoría global para el mercado Latinoamericano y Norteamericano.
+  World Talent Consulting: es una empresa dedicada a ofrecer soluciones especializadas en Consultoría, Headhunting, Coaching y Outplacement. Hoy en día se he convertido en una empresa de consultoría global para el mercado Latinoamericano y Norteamericano.
 
 <br>
 </p>
