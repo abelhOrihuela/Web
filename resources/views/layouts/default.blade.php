@@ -17,17 +17,17 @@
   <link rel="stylesheet" href="{{asset('css/menu.css')}}">
 
   <meta property="og:url"           content="http://www.wtc-talent.worldtalentconsulting.com/" />
-	<meta property="og:type"          content="website" />
-	<meta property="og:title"         content="World Talent Consulting" />
-	<meta property="og:description"   content="Vacncy" />
-	<meta property="og:image"         content="http://www.wtc-talent.worldtalentconsulting.com/img/esca.jpg" />
+  <meta property="og:type"          content="website" />
+  <meta property="og:title"         content="World Talent Consulting" />
+  <meta property="og:description"   content="Vacncy" />
+  <meta property="og:image"         content="http://www.wtc-talent.worldtalentconsulting.com/img/esca.jpg" />
 </head>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="A layout example that shows off a responsive product landing page.">
-  <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Roboto:400,300|Raleway|Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="A layout example that shows off a responsive product landing page.">
+<link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,300|Raleway|Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
 </head>
 <body>
 
@@ -49,21 +49,6 @@
 
               <li><a href="{{ route('contacto_index_path') }}">Contacto</a></li>
 
-              @if($currentUser)
-              @if($currentUser->type==0)
-              <li><a href="{{ route('curriculum_index_path') }}">Mi perfil</a></li>
-              @endif
-              <li><a href="{{ route('auth_destroy_path') }}">Cerrar sesion</a></li>
-              @else
-              <li><a href="{{ route('auth_store_path') }}">Ingresar</a></li>
-              @endif
-
-
-              @if($currentUser)
-              @if($currentUser->type==1)
-              <li><a href="{{ route('dashboard_index_path') }}">Panel</a></li>
-              @endif
-              @endif
             </ul>
           </div>
         </nav>
@@ -80,30 +65,30 @@
       <li><a href="{{ route('terminos_index_path') }}" target="_blank" >Terminos</a></li>
       <li><!--- inicio codigo www.gratisparaweb.com ---><div align="center">
         <a href="http://contadores.gratisparaweb.com" target="_blank"><img src="http://contadores.gratisparaweb.com/imagen.php?contador=82&id2=581988" alt="Contadores" border="0"></a><br><br><img src="" alt="Visitas" width="" height="" border="" usemap="#Map" /><map name="Map"><area shape="rect" coords="48,1,90,22" href="http://www.cursosparati.com" target="_blank" alt="Cursos"><area shape="rect" coords="0,0,47,15" href="http://contadores.gratisparaweb.com" target="_blank" alt=""></map></a></div><!--- fin codigo www.gratisparaweb.com ---></li>
-    </ul>
-    <div class="socios">
-      <h3>Socios</h3>
-      <article class="item__socios">
-        <span><a href="http://www.bravo-intercultural.com/" target="_blank">Bravo Intercultural</a></span>
-        <p>
-          Am Friedhof 80 <br>
-          22149 Hamburgo Alemania <br>
-          Tel. fijo: +49 (0) 40 65 70 418 <br>
-          Celular:  +49 (0) 162 23 27 864 <br>
+      </ul>
+      <div class="socios">
+        <h3>Socios</h3>
+        <article class="item__socios">
+          <span><a href="http://www.bravo-intercultural.com/" target="_blank">Bravo Intercultural</a></span>
+          <p>
+            Am Friedhof 80 <br>
+            22149 Hamburgo Alemania <br>
+            Tel. fijo: +49 (0) 40 65 70 418 <br>
+            Celular:  +49 (0) 162 23 27 864 <br>
 
-        </p>
-      </article>
-    </div>
-  </footer>
+          </p>
+        </article>
+      </div>
+    </footer>
 
 
-  <footer id="subfooter">
-    <p>
-      World Talent Consulting Copyright (c) 2015 Copyright Holder All Rights Reserved.
-    </p>
-  </footer>
-</div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="/js/menu.js"></script>
+    <footer id="subfooter">
+      <p>
+        World Talent Consulting Copyright (c) 2015 Copyright Holder All Rights Reserved.
+      </p>
+    </footer>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="/js/menu.js"></script>
 </body>
 </html>

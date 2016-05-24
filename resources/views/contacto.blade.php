@@ -19,7 +19,7 @@
           C.P 52140 <br>
         </p>
       </div>
-      
+
       <div class="item_other">
         <h3 class="font-blue relaway">Formulario de contacto</h3>
         <p class="font-gray">
@@ -31,7 +31,7 @@
           <div class="alert alert-danger">
             <ul class="list-unstyled">
               @foreach($errors->all() as $error)
-              <p class="font-gray">Error : {{ $error }}</p>
+              <p class="font-gray p-alert">Error : {{ $error }}</p>
               @endforeach
             </ul>
           </div>
@@ -72,9 +72,10 @@
               </div>
 
               <div class="pure-u-1 pure-u-md-1-3">
-                <img src="{{ Captcha::src() }}" alt="" />
+
                 <label for="city" class="font-gray">Escribe los caracteres de la imagen</label>
                 <input name="captcha" class="field__input" type="text">
+                <img src="{{ Captcha::src() }}" alt="" />
               </div>
             </div>
 

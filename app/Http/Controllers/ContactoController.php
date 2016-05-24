@@ -46,7 +46,7 @@ class ContactoController extends Controller
     $validator = Validator::make([
       'captcha' => Input::get('captcha')
     ],
-    $rules,[ 'captcha' => 'El captcha ingresado es incorrecto.' ]);
+    $rules,[ 'captcha' => 'Los caracteres no corresponden con los de la imagen.' ]);
 
     if ($validator->passes()) {
 

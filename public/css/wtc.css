@@ -644,3 +644,18 @@ body{
 .center-thanks{
   text-align: center;
 }
+        .button-success,
+        .button-error,
+        .button-warning,
+        .button-secondary {
+            color: white;
+            border-radius: 4px;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+          }
+
+        .p-alert{
+          border: 1px solid red;
+          border-radius: 5px;
+          box-shadow: 5px 5px 3px red;
+          padding: .5em;
+        }
